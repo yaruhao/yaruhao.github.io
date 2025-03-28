@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yaru Hao - Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: auto;
+            padding: 40px;
+            line-height: 1.6;
+        }
+        img.profile {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            float: left;
+            margin-right: 30px;
+        }
+        .header-content {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;  /* Reduced from 20px */
+        }
+        .text-content {
+            flex: 1;
+        }
+        h1, h2 {
+            color: #333;
+            margin-top: 0;
+        }
+        h3 {
+            font-size: 18px; /* Reduced heading size */
+        }
+        a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        .research-paper {
+            margin-bottom: 10px;  /* Further reduced from 10px to 8px */
+            position: relative;
+            padding-left: 20px;  /* Add padding for bullet point */
+        }
+        .research-paper::before {
+            content: "■";  /* Add bullet point */
+            position: absolute;
+            left: 5px;
+        }
+        .research-paper h3 {
+            margin-bottom: 2px;  /* Reduce space after title */
+            margin-top: 0;
+        }
+        .research-paper p {
+            margin: 4px 0;  /* Reduce space between paragraphs */
+        }
+        .bio-section {
+            clear: both;
+            padding-top: 5px;  /* Reduced from 20px to 5px */
+        }
+        .experience-list {
+            padding-left: 20px;
+            list-style-type: disc; /* This adds bullet points (dots) */
+            margin-bottom: 25px;
+        }
+        .experience-item {
+            margin-bottom: 8px; /* Reduced from 12px */
+        }
+        .experience-date, .experience-company, .experience-desc {
+            margin: 2px 0; /* Reduced from 3px */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="photo.jpg" alt="Haha" class="profile">
+            <div class="text-content">
+                <h1 style="margin-bottom: 5px;">Yaru Hao (郝雅茹)</h1>
+                <p class="position">Researcher @ Microsoft Research</p>
+                <p style="margin-bottom: 5px;">
+                    <a href="mailto:yaruhaom@gmail.com">Email</a> /
+                    <a href="https://scholar.google.com/citations?user=cqOLO7IAAAAJ&hl=en">Google Scholar</a> /
+                    <a href="https://github.com/YRdddream">Github</a> /
+                    <a href="https://www.linkedin.com/in/yaru-hao-8984a92b7/">LinkedIn</a>
+                </p>
+            </div>
+        </div>
+        <div class="bio-section">
+            <p>I am currently a researcher in <a href="https://www.microsoft.com/en-us/research/group/general-artificial-intelligence/">General Artificial Intelligence (GenAI)</a> group at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/">Microsoft Research Asia (MSRA)</a>. Before that, I recieved my bachelor's and master's degrees in computer science from Beihang university in 2019 and 2022, advised by <a href="http://vlsicad.eecs.umich.edu/BK/Slots/cache/www.nlsde.buaa.edu.cn/~kexu/">Dr. Ke Xu</a>. During my master's studies, I spent most of my time as a research intern in MSRA, mentored by <a href="https://dong.li/">Dr. Li Dong</a> and <a href="https://thegenerality.com/">Dr. Furu Wei</a>. I'm interested in developing simple yet effective methods to enhance foundation models and explore the science behind them. </p>
+        </div>
+    </header>
+    
+    <section>
+        <h2>Experience</h2>
+        <ul class="experience-list">
+            <li class="experience-item">
+                <p class="experience-date"><em>Jan 2022 - Present</em>, <strong>Researcher</strong></p>
+                Microsoft Research Asia, GenAI team
+                <p class="experience-desc">Working on large language model pretraining, in-context learning and reasoning.</p>
+            </li>
+            
+            <li class="experience-item">
+                <p class="experience-date"><em>Feb 2019 - Jan 2022</em>, <strong>Research Intern</strong></p>
+                <p class="experience-company">Microsoft Research Asia, NLC Group, mentored by <a href="https://dong.li/">Dr. Li Dong</a> and <a href="https://thegenerality.com/">Dr. Furu Wei</a></p>
+                <p class="experience-desc">Working on interpretability of deep models and masked language model training. </p>
+            </li>
+            
+            <li class="experience-item">
+                <p class="experience-date"><em>Oct 2018 - Feb 2019</em>, <strong>Research Intern</strong></p>
+                <p class="experience-company">Baidu Inc, DQA Group, mentored by <a href="https://www.machinereading.ai/">Dr. Jing Liu</a> </p>
+                <p class="experience-desc">Working on building transformer-based question-answering systems.</p>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Publications</h2>
+        <div class="research-paper">
+            <h3><a href="https://arxiv.org/pdf/2410.07064">Data Selection via Optimal Control for Language Models</a></h3>
+            <p>Yuxian Gu, Li Dong, Hongning Wang, <strong>Yaru Hao</strong>, Qingxiu Dong, Furu Wei, Minlie Huang.</p>
+            <p>International Conference on Learning Representations (ICLR), Oral, 2025.
+            </p>
+        </div>
+        
+        <div class="research-paper">
+            <h3><a href="https://arxiv.org/pdf/2306.14824">Kosmos-2: Grounding Multimodal Large Language Models to the World</a></h3>
+            <p>Zhiliang Peng*, Wenhui Wang*, Li Dong*, <strong>Yaru Hao</strong>, Shaohan Huang, Shuming Ma, Furu Wei.</p>
+            <p>International Conference on Learning Representations (ICLR), 2024. [<a href="https://github.com/microsoft/unilm/tree/master/kosmos-2">code</a>]</p>
+        </div>
+
+        <div class="research-paper">
+            <h3><a href="https://arxiv.org/pdf/2212.09611">Optimizing Prompts for Text-to-Image Generation</a></h3>
+            <p><strong>Yaru Hao*</strong>, Zewen Chi*, Li Dong, Furu Wei.</p>
+            <p>Neural Information Processing Systems (NeurIPS), Spotlight, 2023. [<a href="https://github.com/microsoft/LMOps/tree/main/promptist">code</a>]</p>
+        </div>
+
+        <div class="research-paper">
+            <h3><a href="https://arxiv.org/pdf/2302.14045">Language Is Not All You Need: Aligning Perception with Language Models</a></h3>
+            <p>Shaohan Huang*, Li Dong*, Wenhui Wang*, <strong>Yaru Hao*</strong>, Saksham Singhal*, Shuming Ma*, Tengchao Lv, Lei Cui, Owais Khan Mohammed, Barun Patra, Qiang Liu, Kriti Aggarwal, Zewen Chi#, Johan Bjorck, Vishrav Chaudhary, Subhojit Som, Xia Song, Furu Wei.</p>
+            <p>Neural Information Processing Systems (NeurIPS), 2023.</p>
+        </div>
+
+        <div class="research-paper">
+            <h3><a href="https://arxiv.org/pdf/2205.10183">Prototypical Calibration for Few-shot Learning of Language Models</a></h3>
+            <p>Zhixiong Han, <strong>Yaru Hao</strong>, Li Dong, Yutao Sun, Furu Wei.</p>
+            <p>International Conference on Learning Representations (ICLR), 2023.</p>
+        </div>
+
+        <div class="research-paper">
+            <h3><a href="https://arxiv.org/pdf/2211.13638">Prototypical fine-tuning: Towards robust performance under varying data sizes</a></h3>
+            <p>Yiqiao Jin, Xiting Wang, <strong>Yaru Hao</strong>, Yizhou Sun, Xing Xie</p>
+            <p>AAAI Conference on Artificial Intelligence (AAAI), 2023.</p>
+        </div>
+
+        <div class="research-paper">
+            <h3><a href="https://arxiv.org/pdf/2212.10559">Why Can GPT Learn In-Context? Language Models Secretly Perform Gradient Descent as Meta-Optimizers</a></h3>
+            <p>Damai Dai, Yutao Sun, Li Dong, <strong>Yaru Hao</strong>, Shuming Ma, Zhifang Sui, Furu Wei.</p>
+            <p>Findings of Association for Computational Linguistics (Findings of ACL), 2023.</p>
+        </div>
+
+        <div class="research-paper">
+            <h3><a href="https://arxiv.org/pdf/2309.05689">Large Language Model for Science: A Study on P vs. NP</a></h3>
+            <p>Qingxiu Dong*, Li Dong*, Ke Xu*, Guangyan Zhou, <strong>Yaru Hao</strong>, Zhifang Sui, Furu Wei.</p>
+            <p>arXiv preprint:2309.05689, 2023.</p>
+        </div>
+
+        <div class="research-paper">
+            <h3><a href="https://arxiv.org/pdf/2212.06713">Structured Prompting: Scaling In-Context Learning to 1,000 Examples</a></h3>
+            <p><strong>Yaru Hao*</strong>, Yutao Sun*, Li Dong, Zhixiong Han, Yuxian Gu, Furu Wei.</p>
+            <p>arXiv preprint:2212.06713, 2022. [<a href="https://github.com/microsoft/LMOps/tree/main/structured_prompting/fairseq-version">code</a>]</p>
+        </div>
+
+        <div class="research-paper">
+            <h3><a href="https://arxiv.org/pdf/2206.06336">Language Models are General-Purpose Interfaces</a></h3>
+            <p><strong>Yaru Hao*</strong>, Haoyu Song*, Li Dong*, Shaohan Huang, Zewen Chi, Wenhui Wang, Shuming Ma, Furu Wei.</p>
+            <p>arXiv preprint:2206.06336, 2022.</p>
+        </div>
+
+        <div class="research-paper">
+            <h3><a href="https://arxiv.org/pdf/2104.08696">Knowledge Neurons in Pretrained Transformers</a></h3>
+            <p>Damai Dai, Li Dong, <strong>Yaru Hao</strong>, Zhifang Sui, Furu Wei.</p>
+            <p>Association for Computational Linguistics (ACL), 2022.</p>
+        </div>
+
+        <div class="research-paper">
+            <h3><a href="https://arxiv.org/pdf/2004.11207">Self-Attention Attribution: Interpreting Information Interactions Inside Transformer</a></h3>
+            <p><strong>Yaru Hao</strong>, Li Dong, Furu Wei, Ke Xu.</p>
+            <p><em><strong>Best Paper Runner Up</strong></em></p>
+            <p>AAAI Conference on Artificial Intelligence (AAAI), 2021. [<a href="https://github.com/YRdddream/attattr">code</a>]</p>
+        </div>
+
+        <div class="research-paper">
+            <h3><a href="https://arxiv.org/pdf/2106.13715">Learning to Sample Replacements for ELECTRA Pre-Training</a></h3>
+            <p><strong>Yaru Hao</strong>, Li Dong, Hangbo Bao, Ke Xu, Furu Wei.</p>
+            <p>Findings of Association for Computational Linguistics (Findings of ACL), 2021.</p>
+        </div>
+
+        <div class="research-paper">
+            <h3><a href="https://aclanthology.org/2020.aacl-main.11/">Investigating learning dynamics of BERT fine-tuning</a></h3>
+            <p><strong>Yaru Hao</strong>, Li Dong, Hangbo Bao, Ke Xu, Furu Wei.</p>
+            <p>Asia-Pacific Association for Computational Linguistics (AACL), 2020.</p>
+        </div>
+
+        <div class="research-paper">
+            <h3><a href="https://arxiv.org/pdf/1908.05620">Visualizing and understanding the effectiveness of BERT</a></h3>
+            <p><strong>Yaru Hao</strong>, Li Dong, Furu Wei, Ke Xu.</p>
+            <p>Empirical Methods in Natural Language Processing (EMNLP), 2019.</p>
+        </div>
+
+    </section>
+
+    <section>
+        <h2 style="margin-top: 25px;">Education</h2>
+        <ul class="experience-list">
+            <li class="experience-item">
+                <p class="experience-date"><em>Sept 2015 - Jun 2019</em>, Beihang University, ShenYuan Honors College</p>
+                <strong>B.E.</strong> in Computer Science
+            </li>
+            
+            <li class="experience-item">
+                <p class="experience-date"><em>Sept 2019 - Jan 2022</em>, Beihang University, College of Computer Science and Engineering</p>
+                <strong>M.S.</strong> in Computer Science, advised by <a href="http://vlsicad.eecs.umich.edu/BK/Slots/cache/www.nlsde.buaa.edu.cn/~kexu/">Dr. Ke Xu</a>
+            </li>
+        </ul>
+    </section>
+</body>
+</html>
